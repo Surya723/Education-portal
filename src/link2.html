@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VIEW COURSES</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fevicon.png">
+
+    <script type="text/javascript">
+      function view_added() {
+        var queryString = decodeURIComponent(window.location.search); //parsing
+        queryString = queryString.substring(1);
+        var queries = queryString.split("&");
+        for (var i = 0; i < queries.length; i++) {
+          document.write("<center>");
+          document.write(
+            "<table> <tr> <td><h3>" + queries[i] + "</h3></td></tr>"
+          );
+
+          /*document.write( "<h3>" + queries[i] + "</h3>");*/
+          document.write("</table>");
+          document.write("</centre");
+        }
+
+        /*
+    var xl= window.location.search.substring(1);
+    var container = document.getElementById('cpara');
+    container.innerHTML=xl;*/
+      }
+    </script>
+  </head>
+  <body style="background-color: grey; color: white">
+
+    <header>
+      <div id = "hd">
+        <h1>ViLearn!</h1>
+        <img src="image2.png" alt="">
+      </div>
+    </header>
+
+    <center>
+      <h2>LIST OF OFFERED</h2>
+      <table border="2">
+        <tr>
+          <th>Course code</th>
+          <th>Course name</th>
+          <th>Lecture hours</th>
+          <th>Tutorial hours</th>
+          <th>practical hours</th>
+          <th>J project hours</th>
+          <th>Credits</th>
+        </tr>
+        <tr>
+          <td>BCSE103E</td>
+          <td>Computer-programming</td>
+          <td>1</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>BCSE102L</td>
+          <td>Data structures and algorithms</td>
+          <td>3</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>CSE1016</td>
+          <td>Deep learning principals of practice</td>
+          <td>2</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>CSE2012</td>
+          <td>Design analysis and algorithms</td>
+          <td>3</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>BCSE205L</td>
+          <td>computer architecture andorganizaion</td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <button onclick="view_added()">View Newly added</button>
+
+      <p id="cpara"></p>
+      <h3><a href="link1.html">You want to add new course?</a></h3>
+    </center>
+  </body>
+</html>

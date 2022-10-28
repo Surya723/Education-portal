@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+table,th,td,tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<script>
+  function displayForm(){
+    var x = document.getElementById("1").checked;
+    var y = document.getElementById("2").checked;
+    var z = document.getElementById("3").checked;
+    var a = document.getElementById("4").checked;
+    var b = document.getElementById("5").checked;
+	var c = document.getElementById("6").checked;
+	var d = document.getElementById("7").checked;
+	var e = document.getElementById("8").checked;
+
+    document.getElementById("100").innerHTML="";
+    document.getElementById("101").innerHTML="The selected courses are:";
+    if(x == true){
+      document.getElementById("102").innerHTML="Computer programming in Java";
+    }
+    if(y == true){
+      document.getElementById("103").innerHTML = "Data Structures and Algorithms";
+    }
+    if(z == true){
+      document.getElementById("104").innerHTML = "Deep Learning: Principles and Practices";
+    }
+    if(a == true){
+      document.getElementById("105").innerHTML = "Design and analysis of algorithms";
+    }
+    if(b == true){
+      document.getElementById("106").innerHTML = "Artificial Intelligence for Cyber Security";
+    }
+    if(c == true){
+      document.getElementById("107").innerHTML = "Information Security Analysis and Audit";
+    }
+    if(d == true){
+      document.getElementById("108").innerHTML = "Intelligent Multi Agent and Expert systems";
+    }
+    if(e == true){
+      document.getElementById("109").innerHTML = "Computer Architecture and Organization";
+    }
+
+  }
+</script>
+</head>
+<body style="background-color:rgb(90,100,85)">
+<font size="25px">
+<h1 style="color: yellow; text-shadow:3px 2px red; text-transform:uppercase" align="center">
+Faculty Preferences</h1>
+
+</font>
+<form name="Form1" align="center">
+<table align="center" id="100">
+<tr>
+
+<th colspan="2"><p style="color:Black; font-size: 35px;">Course Code</p></th>
+<th><p style="color:Black; font-size: 35px;">Course Name</p></th>
+<th><p style="color:Black; font-size: 35px;">No of wishlist recieved</p></th>
+</tr>
+<tr>
+<td><input type="checkbox" name="course1" id="1" value="course1"></td>
+<td><p style="color:Black; font-size: 35px;">BCSE103E</p></td>
+<td><p style="color:Black; font-size: 35px;">Computer programming in Java</p></td>
+<td><p style="color:Black; font-size: 35px;">1400</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course2" id="2"></td>
+<td><p style="color:Black; font-size: 35px;">BCSE202L</p></td>
+<td><p style="color:Black; font-size: 35px;">Data Structures and Algorithms</p></td>
+<td><p style="color:Black; font-size: 35px;">1260</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course3" id="3"></td>
+<td><p style="color:Black; font-size: 35px;">CSE1016</p></td>
+<td><p style="color:Black; font-size: 35px;">Deep Learning: Principles and
+Practices</p></td>
+<td><p style="color:Black; font-size: 35px;">700</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course4" id="4"></td>
+<td><p style="color:Black; font-size: 35px;">CSE2012</p></td>
+<td><p style="color:Black; font-size: 35px;">Design and analysis of algorithms</p></td>
+<td><p style="color:Black; font-size: 35px;">8</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course5" id="5"></td>
+<td><p style="color:Black; font-size: 35px;">CSE3061</p></td>
+<td><p style="color:Black; font-size: 35px;">Artificial Intelligence for Cyber
+Security</p></td>
+<td><p style="color:Black; font-size: 35px;">700</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course6" id="6"></td>
+<td><p style="color:Black; font-size: 35px;">CSE3501</p></td>
+<td><p style="color:Black; font-size: 35px;">Information Security Analysis and
+Audit</p></td>
+<td><p style="color:Black; font-size: 35px;">700</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course7" id="7"></td>
+<td><p style="color:Black; font-size: 35px;">CSE4056</p></td>
+<td><p style="color:Black; font-size: 35px;">Intelligent Multi Agent and Expert 
+systems</p></td>
+<td><p style="color:Black; font-size: 35px;">420</p></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="course8" id="8"></td>
+<td><p style="color:Black; font-size: 35px;">BCSE205L</p></td>
+<td><p style="color:Black; font-size: 35px;">Computer Architecture and
+Organization </p></td>
+<td><p style="color:Black; font-size: 35px;">1680</p></td>
+</tr>
+
+<tr>
+<td colspan=4 align="center"><center><button onclick="displayForm()">Submit</button></center></td>
+</tr>
+</form>
+
+<p style="color: red; font-size: 38px;">You can prefer maximum of 5 courses</p>
+
+<h1 id=101></h1>
+<h4 id=102></h4>
+<h4 id=103></h4>
+<h4 id=104></h4>
+<h4 id=105></h4>
+<h4 id=106></h4>
+<h4 id=107></h4>
+<h4 id=108></h4>
+<h4 id=109></h4>
+</body>
+</html>

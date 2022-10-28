@@ -1,0 +1,68 @@
+<html>
+<!--20BCE1071 S Surya 03-08-2022-->
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<script>
+function displayForm()
+{
+var user_name=document.forms["Form1"]["uname"].value;
+var password=document.forms["Form1"]["pwd"].value;
+var user_type=document.forms["Form1"]["ch"].value;
+if(user_name==null || user_name=="")
+{
+alert("Please Enter the user name");
+}
+else
+{
+document.getElementById("id1").innerHTML="The user name is 
+"+"<b>"+user_name+"<br>";
+}
+if(password==null || password=="")
+{
+alert("Please Enter the password");
+}
+else
+{
+document.getElementById("id2").innerHTML="The password is 
+"+"<b>"+password+"<br>";
+}
+if(user_type==null || user_type=="")
+{
+alert("Please Enter the user type");
+}
+else
+{
+document.getElementById("id3").innerHTML="The user type is 
+"+"<b>"+user_type+"<br>";
+}
+}
+</script>
+</head>
+<body>
+<form name="Form1" align="center" id="id1" action="index.html" target="_blank">
+<table align="center">
+<tr>
+<td><p style="color:Black; font-size: 50px;">UserName:</p></td><td><input type="text" 
+name="uname"><br></td>
+</tr>
+<tr>
+<td><p style="color:Balck; font-size: 50px;">Password:</p></td><td><input type="password" 
+name="pwd"><br></td>
+</tr>
+<tr>
+<td><p style="color:Black; font-size: 50px;">User Type:</p></td><td> <input list="ch" name="ch">
+<datalist id="ch">
+<option value="Admin">
+<option value="Faculty">
+</datalist><br>
+</tr>
+<tr>
+<td colspan=2>
+<center><input type="submit"/></td>
+</tr>
+</form>
+<h3 id="id1"></h3>
+<p id="id2"></p>
+<p id="id3"></p>
+</body>
+</html>

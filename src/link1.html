@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD COURSE</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fevicon.png">
+
+    <script>
+      function uploadcourse() {
+        alert("COURSE ADDED SUCCESSFULLY");
+      }
+      var cd = document.forms["c1"]["cname"].value;
+      var queryString = "?para1=" + value1;
+      window.location.href = "link2.html" + queryString;
+    </script>
+  </head>
+  <body style="background-color: grey; color: white">
+    <header>
+      <div id = "hd">
+        <h1>ViLearn!</h1>
+        <img src="image2.png" alt="">
+      </div>
+    </header>
+    <center>
+      <h2>ENTER COURSE DETAILS</h2>
+      <form action="link2.html" onsubmit="uploadcourse()">
+        <table>
+          <tr>
+            <td><label for="cc">COURSE CODE: </label></td>
+            <td>
+              <input
+                type="text"
+                name="course_code"
+                id="cc"
+                pattern="[A-Z]{3}[A-Z]{0,1}[0-9]{4}[A-Z]{0,1}"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="cn">COURSE NAME:</label></td>
+            <td><input type="text" name="course_name" id="cname" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="lh">LECTURE HOURS:</label></td>
+            <td>
+              <input
+                type="number"
+                name="hours_of_lecture"
+                id="lh"
+                min="2"
+                max="3"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="th">TUTORIAL HOURS:</label></td>
+            <td>
+              <input
+                type="number"
+                name="tutorial_hours"
+                id="lh"
+                min="0"
+                max="1"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="ph">PRACTICAL HOURS:</label></td>
+            <td>
+              <input
+                type="number"
+                name="practical_hours"
+                id="ph"
+                min="0"
+                max="6"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="jph">PROJECT HOURS:</label></td>
+            <td>
+              <input
+                type="number"
+                name="project_hours"
+                id="jph"
+                min="0"
+                max="4"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="creds">COURSE CREDITS:</label></td>
+            <td>
+              <input
+                type="number"
+                name="course_creds"
+                id="creds"
+                min="1"
+                max="4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="" id="" value="ADD COURSE" /></td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+h1 {
+    display: inline;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    color: #fbeec1;
+}
+
+h2 {
+    text-align: center;
+    color: #fbeec1;
+
+}
+
+body {
+    background-color: grey;
+    color: white;
+}
+
+img {
+    float: left;
+    position: relative;
+    border-radius: 80%;
+    top: 20%;
+    left: 3%;
+    width: 100px;
+    height: 100px;
+}
+
+#hd {
+    height: 160px;
+    background-color:#659dbd;
+    
+}
+
+#main {
+    padding-top: 30px;
+}
+
+table, th, td {
+    font-size: 35px;
+    padding: 5px;
+}
+
+p {
+    font-size: 35px;
+}
+
+a {
+    font-size: 35px;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 10px;
+}

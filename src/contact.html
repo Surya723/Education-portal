@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>VILearn Contact page</title>
+<link rel="icon" href="fevicon.png">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="javascript/js.js="></script>
+
+</head>
+<body class="body">
+<header class="mainheader">
+
+	<img src="image2.png">
+
+	<content id="search">
+		<form>
+  <input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+</form>
+	</content>
+<nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul> 
+  </nav>
+</header>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15560.163142953666!2d80.1534283!3d12.840641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x944b42131b757d2d!2sVellore%20Institute%20of%20Technology%20-%20VIT%20Chennai!5e0!3m2!1sen!2sin!4v1663065192693!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><h3>Contact</h3>
+<h4>VILearn<br>
+Vandalur-Kelambakkam road<br>
+Chennai-600127, Tamilnadu, India<br>
+<pre>
+Phone : 044-22455670<br>
+Email :  info@vilearn.ac.in<br>
+Facebook : https://www.facebook.com/VITCChennai/<br>
+</pre>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<br>
+<br>
+
+<strong>If you are faculty please enter your id number:</strong>
+<center>
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+</center>
+<hr>
+<footer class="mainFooter">
+	<p>Copyright &copy <a href="https://www.facebook.com/IamBRP">VILearn</a> </p>
+	<center>
+	<a href="https://www.facebook.com/VITCChennai/">Facebook</a>
+	<a href="https://twitter.com/chennaivit">Twitter</a>
+	<a href="https://www.youtube.com/c/VITChennaic">Youtube</a>
+	</center>
+</footer>
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 1000) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+<script type="text/javascript">
+  document.title="Contact";
+</script>
+</body>
+
+</html>
